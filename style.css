@@ -374,8 +374,8 @@ background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox=
     align-items: flex-end;
     justify-content: center;
 }
-@media screen and (max-width:768px) {
 
+@media screen and (max-width:768px) {
    .nav{
       background: linear-gradient(
   to right,
@@ -383,57 +383,101 @@ background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox=
   #EEF1F6 100%
 );
    }
-    .side-nav{
-     
+   .side-nav{
       display: none;
-    }
-    .nav h2{
+   }
+   .nav h2{
       display: none;
-    }
-    .pc-msg{
+   }
+   .pc-msg{
       display: none;
-    }
-    
-    .nav .mobile-icon{
+   }
+   .nav .mobile-icon{
       display: flex;
       justify-content: center;
       align-items: center;
       margin-left: 1.25rem;
       gap: 0.2rem;
-    }
-    .nav-links{
+   }
+   .nav-links{
       justify-content: space-around;
-    }
-    .desktop-para{
+   }
+   .desktop-para{
       display: none;
-    }
-    .search-feature {
+   }
+   .search-feature {
       background-color: white;
       width: 50%;
       display: flex;
       justify-content: flex-end;
-      
-    }
+   }
    .nav svg{
       color: black;
-      
-    }
-    .Top-Title{
+   }
+   .Top-Title{
       display: none;
-    }
-    .main-cards{
+   }
+   .main-cards{
       flex-direction: column;
-      
-
-    }
+   }
+   .mobile-msg{
+      display: block;
+   }
 }
-@media screen and (min-width:769px) {
-      .nav .mobile-icon{
-         display: none;
-      }
-      .mobile-msg{
-         display: none;
-      }
+
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+   .nav .mobile-icon{
+      display: none;
+   }
+   .mobile-msg{
+      display: none;
+   }
+   .side-nav{
+      width: 5rem;
+      min-width: 5rem;
+   }
+   .nav h2{
+      width: 5rem;
+      min-width: 5rem;
+      font-size: 1.1rem;
+   }
+   .side-nav p{
+      font-size: 0.625rem;
+   }
+   .side-nav svg{
+      width: 1.5rem;
+      height: 1.5rem;
+   }
+   .main-cards{
+      flex-wrap: wrap;
+      gap: 1rem;
+   }
+   .card{
+      flex: 1 1 calc(50% - 1rem);
+      min-width: 280px;
+   }
+   .Top-Title h2{
+      font-size: 1.2rem;
+   }
+   .Top-Title svg{
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-right: 1rem;
+   }
+   .profile p{
+      display: none;
+   }
+}
+
+
+@media screen and (min-width:1025px) {
+   .nav .mobile-icon{
+      display: none;
+   }
+   .mobile-msg{
+      display: none;
+   }
 }
  
 
